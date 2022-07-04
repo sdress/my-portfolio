@@ -1,0 +1,51 @@
+/* palette ideas:
+    https://colorhunt.co/palette/76ba99adcf9fced89effdcae
+    https://colorhunt.co/palette/a03c78ed8e7ccdf3a293d9a3
+    https://colorhunt.co/palette/f6e3c5a0d9956cc4a14cacbc
+*/
+
+/* color palette:
+    background-color: #F6E3C5;
+    background-color: #A0D995;
+    color: #6CC4A1;
+    color: #4CACBC;
+*/
+
+/* css reset */
+* {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	}
+
+#color-palette{
+    background-color: #F6E3C5;
+    background-color: #A0D995;
+    color: #6CC4A1;
+    color: #4CACBC;
+}
+
+body{
+    background-color: #F6E3C5;
+}
+
+.background-1{
+    background-color: #A0D995;
+    padding: 2%;
+    margin: 2% 0%;
+    border-radius: 1em;
+}
+
+.navbar{
+    background-color: #6CC4A1;
+}
+
+.nav-link{
+    color: whitesmoke
+}
