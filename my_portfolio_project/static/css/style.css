@@ -24,6 +24,43 @@
 	margin: 0;
 	}
 
+
+body{
+    background-color: #F6E3C5;
+    margin-bottom: 0px;
+}
+
+.carousel{
+    width: fit-content;
+    height: fit-content;
+}
+/* 
+.carousel img{
+    margin: auto auto;
+} */
+
+.carousel-item > .img-responsive{
+    width: 50%;
+}
+
+#scrollspyArtwork{
+    margin-top: 2em;
+}
+
+.title{
+    text-align: center;
+    margin-top: 2%;
+}
+
+.contact-div{
+    margin-bottom: 0px;
+    padding-top: 5em;
+}
+
+/*
+UTILITIES
+background colors and fonts
+*/
 #color-palette{
     background-color: #F6E3C5;
     background-color: #A0D995;
@@ -31,21 +68,37 @@
     color: #4CACBC;
 }
 
-body{
-    background-color: #F6E3C5;
+.main-font{
+    font-family: 'Poppins', sans-serif;
 }
 
-.background-1{
+.name-font{
+    font-family: 'Dancing Script', cursive;
+}
+
+.background-color-1{
     background-color: #A0D995;
-    padding: 2%;
-    margin: 2% 0%;
-    border-radius: 1em;
 }
 
-.navbar{
+.background-color-2{
     background-color: #6CC4A1;
 }
 
-.nav-link{
-    color: whitesmoke
+.navbar{
+    background-color: #A0D995;
 }
+
+.nav-link{
+    color: whitesmoke;
+    text-shadow: 1px 0.5px slategrey;
+}
+
+
+/* 
+.background-1{
+    background-color: #A0D995;
+    padding: 2%;
+    margin: 2% 0 0 0;
+    border-radius: 1em;
+} 
+*/
