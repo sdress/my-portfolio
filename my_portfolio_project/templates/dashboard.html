@@ -6,21 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     {% load static %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@200&display=swap" rel="stylesheet">
 </head>
-<body>
+<body style="font-family: 'Poppins', sans-serif;">
     <!-- Navbar -->
     {% include 'partials/nav.html' %}
     <!-- End navbar -->
 
-    <div class="container background-1">
-        <h4>Hello, my name is Sarah</h4>
+    <!-- Introduction -->
+    <div class="py-5 text-center container-fluid background-color-1">
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="name-font">Sarah Dresser</h1>
+                <p class="lead text-muted main-font">Hi, I'm a Full-Stack Developer based in Los Angeles, CA and Copenhagen, Denmark</p>
+                <p>
+                    <a href="#scrollspyWebsites" class="btn btn-primary">See applications</a>
+                    <a href="#scrollspyArtwork" class="btn btn-secondary">See artwork</a>
+                </p>
+            </div>
+        </div>
+        
+    </div>
 
+    <!-- My Artwork section -->
+
+    <!-- carousel view -->
+    <div class="container justify-content-center">
         <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="{% static 'imgs/ost.jpg' %}" class="d-block w-60 center" alt="Cheese shop menu board outside on cobblestone" width="420" height="540">
+                    <img src="{% static 'imgs/ost.jpg' %}" class="d-block w-100" height="640px" width="320px" alt="Cheese shop menu board outside on cobblestone">
                 </div>
                 <div class="carousel-item">
                     <img src="{% static 'imgs/velkommen.jpg' %}" class="d-block w-100" alt="glass mirror with flourished writing that says, 'velkommen'">
@@ -39,5 +59,44 @@
             </button>
         </div>
     </div>
+
+    <!-- card view
+    <h1 id="scrollspyArtwork" class="text-center">My Artwork</h1>
+    <div class="artwork py-5">
+        <div class="container">
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm" style="width: 18rem;">
+                        <img src="{% static 'imgs/velkommen.jpg' %}" class="card-img-top" alt="glass mirror with flourished writing that says, 'velkommen'">
+                        <div class="card-body">
+                            <p class="card-text">Outdoor decorations</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm" style="width: 18rem;">
+                        <img src="{% static 'imgs/ost.jpg' %}" class="card-img-top" alt="Menu board outside on cobblestone">
+                        <div class="card-body">
+                            <p class="card-text">Street A-sign</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                <div class="card shadow-sm" style="width: 18rem;">
+                    <img src="{% static 'imgs/bar_menu.jpg' %}" class="card-img-top" alt="black bar menu on white table">
+                    <div class="card-body">
+                        <p class="card-text">Menus and Interior Decorations</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+        </div>
+    </div> -->
+
+
 </body>
 </html>

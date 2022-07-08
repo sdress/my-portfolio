@@ -31,21 +31,51 @@
     color: #4CACBC;
 }
 
+.main-font{
+    font-family: 'Poppins', sans-serif;
+}
+
+.name-font{
+    font-family: 'Dancing Script', cursive;
+}
+
 body{
     background-color: #F6E3C5;
 }
 
-.background-1{
+.background-color-1{
     background-color: #A0D995;
-    padding: 2%;
-    margin: 2% 0%;
-    border-radius: 1em;
+}
+
+.background-color-2{
+    background-color: #6CC4A1;
+}
+
+.carousel{
+    width: 640px;
+    height: 320px;
+    justify-content: center;
+    align-content: center;
 }
 
 .navbar{
-    background-color: #6CC4A1;
+    background-color: #A0D995;
 }
 
 .nav-link{
     color: whitesmoke
 }
+
+#scrollspyArtwork{
+    margin-top: 2em;
+}
+
+
+/* 
+.background-1{
+    background-color: #A0D995;
+    padding: 2%;
+    margin: 2% 0 0 0;
+    border-radius: 1em;
+} 
+*/
